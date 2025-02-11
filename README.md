@@ -1,3 +1,134 @@
+# AI-Based Fortune Analysis System
+
+An AI-powered fortune analysis system that integrates Bazi, Zi Wei Dou Shu, and Western astrology for intelligent interpretation. It leverages the DeepSeek API to provide accurate and personalized insights.
+
+## Features
+
+- 🔮 **Comprehensive Interpretation**: Combines Chinese traditional fortune-telling (Bazi, Zi Wei Dou Shu) with Western astrology.
+- 🎯 **Personalized Analysis**: Incorporates MBTI personality dimensions for more accurate individual trait assessments.
+- ⚡ **Real-Time Response**: Uses streaming output for instant interpretation results.
+- 🎨 **Elegant UI**: Modern design with golden cloud patterns, reflecting an oriental aesthetic.
+
+## Tech Stack
+
+### Backend
+- Node.js
+- Express
+- DeepSeek API
+
+### Frontend
+- React
+- Tailwind CSS
+- Vite
+
+## Quick Start
+
+### Prerequisites
+- Node.js 16+
+- npm 7+
+
+### Installation Steps
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/ai-personal-reading.git
+cd ai-personal-reading
+```
+
+2. Install dependencies:
+```bash
+# Install backend dependencies
+cd server
+npm install
+
+# Install frontend dependencies
+cd ../client
+npm install
+```
+
+3. Set up environment variables:
+```bash
+# Create a .env file in the server directory
+DEEPSEEK_API_KEY=your_api_key_here
+PORT=3000
+```
+
+4. Start the services:
+```bash
+# Start the backend service (inside the server directory)
+npm start
+
+# Start the frontend development server (inside the client directory)
+npm run dev
+```
+
+5. Open the application:
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Project Structure
+
+```
+ai-personal-reading/
+├── client/                 # Frontend project
+│   ├── public/            # Static assets
+│   ├── src/
+│   │   ├── components/    # React components
+│   │   ├── services/      # API services
+│   │   └── App.jsx        # Main application component
+│   ├── index.html
+│   └── package.json
+├── server/                 # Backend project
+│   ├── controllers/       # Controllers
+│   ├── routes/           # Routes
+│   ├── app.js            # Express application
+│   └── package.json
+└── README.md
+```
+
+## API Documentation
+
+### POST /api/readings
+Creates a new fortune reading.
+
+**Request Body:**
+```json
+{
+  "data": {
+    "name": "Full Name",
+    "gender": "male|female",
+    "birthDate": "YYYY-MM-DD",
+    "birthTime": "HH:mm",
+    "birthLocation": "Place of Birth",
+    "mbtiScores": [50, 50, 50, 50]
+  }
+}
+```
+
+**Response:**
+- Uses Server-Sent Events (SSE) for streaming interpretation results.
+- Each event contains part of the interpretation.
+- A `[DONE]` marker is sent at the end.
+
+## Contribution Guide
+
+1. Fork the project.
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
+## License
+
+MIT License - See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [DeepSeek](https://deepseek.com) - AI model support.
+- [React](https://reactjs.org/) - Frontend framework.
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework.
+
+
+
 # 命理综合解读系统
 
 一个基于 AI 的命理综合解读系统，结合八字、紫微斗数和西方占星的智能解读服务。使用 DeepSeek API 提供准确、个性化的解读结果。
