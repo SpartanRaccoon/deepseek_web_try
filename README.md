@@ -1,8 +1,9 @@
 # AI-Based Fortune Analysis System
 
 An AI-powered fortune analysis system that integrates Bazi, Zi Wei Dou Shu, and Western astrology for intelligent interpretation. It leverages the DeepSeek API to provide accurate and personalized insights.
-
+<img width="1440" alt="螢幕截圖 2025-02-11 12 46 36" src="https://github.com/user-attachments/assets/e11117f4-4db3-43ba-81a7-1158d2c22cde" />
 ## Features
+
 
 - 🔮 **Comprehensive Interpretation**: Combines Chinese traditional fortune-telling (Bazi, Zi Wei Dou Shu) with Western astrology.
 - 🎯 **Personalized Analysis**: Incorporates MBTI personality dimensions for more accurate individual trait assessments.
