@@ -1,0 +1,94 @@
+{
+  "home": {
+    "title": "大师",
+    "subtitle": "探索你的命运，发现内在的智慧",
+    "methods": {
+      "astrology": {
+        "title": "星座解读",
+        "description": "通过西方占星术解读你的性格特征和人生轨迹"
+      },
+      "purpleStar": {
+        "title": "紫微斗数",
+        "description": "基于中国传统紫微斗数的精确命盘解读"
+      },
+      "bazi": {
+        "title": "生辰八字",
+        "description": "运用中国传统八字理论分析命理"
+      },
+      "mbti": {
+        "title": "MBTI 性格分析",
+        "description": "深入了解你的性格类型和潜在优势"
+      }
+    }
+  },
+  "form": {
+    "name": "姓名",
+    "gender": "性别",
+    "gender.male": "男",
+    "gender.female": "女",
+    "gender.other": "其他",
+    "birthDate": "出生日期",
+    "birthTime": "出生时间",
+    "birthLocation": "出生地点",
+    "submit": "开始解读",
+    "mbti": {
+      "EI": "外向 (E) - 内向 (I)",
+      "SN": "感觉 (S) - 直觉 (N)",
+      "TF": "思考 (T) - 情感 (F)",
+      "JP": "判断 (J) - 知觉 (P)"
+    }
+  },
+  "profile": {
+    "title": "个人档案",
+    "name": "姓名",
+    "email": "电子邮箱",
+    "birthDate": "出生日期",
+    "birthTime": "出生时间",
+    "birthLocation": "出生地点",
+    "save": "保存档案",
+    "readingHistory": "解读历史",
+    "readingType": "解读类型",
+    "date": "日期",
+    "actions": "操作",
+    "saved": "档案已保存",
+    "viewReading": "查看解读",
+    "shareReading": "分享解读"
+  },
+  "reading": {
+    "astrology": {
+      "title": "星座解读",
+      "resultTitle": "星座解读结果"
+    },
+    "purpleStar": {
+      "title": "紫微斗数解读",
+      "resultTitle": "紫微斗数解读结果"
+    },
+    "bazi": {
+      "title": "生辰八字解读",
+      "resultTitle": "八字解读结果"
+    },
+    "mbti": {
+      "title": "MBTI 性格分析",
+      "resultTitle": "MBTI 分析结果"
+    },
+    "sections": {
+      "personality": "性格特征",
+      "fortune": "运势预测",
+      "relationships": "感情分析",
+      "career": "事业发展",
+      "health": "健康建议"
+    },
+    "actions": {
+      "save": "保存解读结果",
+      "share": "分享结果"
+    }
+  },
+  "error": {
+    "required": "此项为必填",
+    "invalidDate": "请输入有效的日期",
+    "invalidTime": "请输入有效的时间",
+    "networkError": "网络错误，请稍后重试",
+    "apiError": "服务器错误，请稍后重试",
+    "profileSaveError": "保存档案失败，请重试"
+  }
+}
